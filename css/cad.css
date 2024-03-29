@@ -1,0 +1,254 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+    --var_cor_fundo: #201b2c;
+    --var_cor_fundo_card: #2f2841;
+    --font-padrao-family: "Roboto";
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-padrao-family);
+    
+}
+
+body{
+    background-color: var(--var_cor_fundo);
+}
+
+#main-cad {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#left-card {
+    width: 50vw;
+    height: 100vh;
+    /* border:1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#left-card h1 {
+    color: #77ffc0;
+    font-size: 2vw;
+}
+
+#left-card > h1 > a{
+    color: #77ffc0;
+    padding: 2px 2px;
+
+}
+
+#left-card > h1 > a:hover{
+    background-color: var(--var_cor_fundo_card);
+    border-radius: 10px;
+    font-weight: bold;
+    color: #00ff88;
+    transition: all linear .3s;
+}
+
+#left-card .left-img {
+    /* border:1px solid; */
+    width: 35vw;
+    opacity: .6;
+}
+
+#left-card .left-img:hover {
+    opacity: 1;
+    transition: all linear .5s;
+}
+
+#right-card {
+    width: 50vw;
+    height: 100vh;
+    /* border:1px solid   red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-cadastro {
+    width: 50%;
+    height: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: var(--var_cor_fundo_card);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.card-cadastro h1 {
+    color: #00ff88;
+    font-weight: 800;
+    /* padding: 10px 0px; */
+
+}
+
+.card-cadastro form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.card-cadastro form label {
+    padding: 5px 0px;
+    color: #f5f5f5;
+
+}
+
+.card-cadastro input[type="date"] {
+    color: #f5f5f5;
+    opacity: .7;
+}
+
+.card-cadastro form input {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    outline: none;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f0fffd;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+form input::placeholder {
+    color: #f5f5f5;
+    opacity: .7;
+}
+
+form input:focus {
+    border: 1px solid #00ff88;
+    transition: all linear .5s;
+}
+
+#gen {
+    padding: 4px 0px;
+}
+
+input#senha{
+    width: 100%;
+}
+
+/* div senha */
+div#pass1{
+    position: relative;
+}
+
+/* i => img bootscrap */
+#btn_senha{
+    position: absolute;
+    bottom: .4em;
+    right: .5em;
+    cursor: pointer;
+    color: #00ff88;
+    display: inline-block;
+}
+
+#btn_senha:hover{
+    transform: scale(1.25);
+}
+
+
+
+input#senha_confirm{
+    width: 100%;
+}
+
+/* div para o elemento confirm senha */
+div#pass2{
+    position:relative;
+}
+
+/* i => img bootscrap : confirmação de senha*/
+#btn_confirm_senha{
+    position: absolute;
+    bottom: .4em;
+    right: .5em;
+    cursor: pointer;
+    color: #00ff88;
+    display: inline-block;
+}
+
+#btn_confirm_senha:hover{
+    transform: scale(1.25);
+}
+
+
+input[type="submit"]#btn {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: .5em;
+    color: black;
+    background-color: #00ff88;
+}
+
+#btn:hover {
+    box-shadow: 0px 0px 5px #00ff88;
+    color: black;
+    transition: all linear .2s;
+    background-color: #00ff88;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width:950px){
+    .card-cadastro{
+        width: 100%;
+    }   
+}
+
+
+@media only screen and (max-width:600px){
+    #main-cad{
+        display: flex;
+        flex-direction: column;
+        /* border:1px solid red; */
+        justify-content: center;
+        align-items: center;
+        min-height: 100%;        
+    }
+
+    #right-card{
+        width: 75vw;
+        /* border:1px solid red; */
+        height: auto;
+    }
+
+    #left-card{
+        /* border:1px solid red; */
+        width: 75vw;
+        height: auto;
+    }
+
+    #left-card .left-img{
+        display: none;
+    }
+
+    #left-card h1{
+        font-size: 1.20em;
+        width: 100%;
+        /* border:1px solid red; */
+        text-align: center;
+        /* margin-bottom: -.5em; */
+        padding: 5px 0px;
+    }
+
+
+}
