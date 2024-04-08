@@ -41,7 +41,7 @@
     font-size: 2vw;
 }
 
-#left-login .left-img{
+#left-login a .left-img{
     /* border:1px solid; */
     width: 45vw;
     opacity: .6;
