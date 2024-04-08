@@ -36,7 +36,15 @@ div#logo {
     padding: 10px 10px;
 }
 
-#menu-options {}
+.a_link{
+    text-decoration: none;
+    color: #77ffc0;
+    opacity: .9;
+}
+
+.a_link:hover{
+    opacity: 1;
+}
 
 #menu-options ul {
     display: flex;
@@ -45,16 +53,6 @@ div#logo {
 
 #menu-options li {
     margin: 10px;
-}
-
-#menu-options li a {
-    text-decoration: none;
-    color: #77ffc0;
-    opacity: .9;
-}
-
-#menu-options li a:hover {
-    opacity: 1;
 }
 
 main {
