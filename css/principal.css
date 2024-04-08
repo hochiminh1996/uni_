@@ -15,12 +15,12 @@
     font-family: var(--font-padrao-family);
 }
 
-body{
+body {
     background-color: var(--var_cor_fundo);
     overflow-x: hidden;
 }
 
-header{
+header {
     /* border:1px solid     red; */
     display: flex;
     justify-content: center;
@@ -31,30 +31,29 @@ header{
     background-color: var(--var-font-header);
 }
 
-div#logo{
+div#logo {
     /* border:1px solid; */
     padding: 10px 10px;
 }
 
-#menu-options{
-}
+#menu-options {}
 
-#menu-options ul{
+#menu-options ul {
     display: flex;
     list-style-type: none;
 }
 
-#menu-options li{
+#menu-options li {
     margin: 10px;
 }
 
-#menu-options li a{
+#menu-options li a {
     text-decoration: none;
     color: #77ffc0;
     opacity: .9;
 }
 
-#menu-options li a:hover{
+#menu-options li a:hover {
     opacity: 1;
 }
 
@@ -63,30 +62,42 @@ main {
     width: 100vw;
 }
 
-#search{
-    width: 100%;
+#search {
+    width: 66%;
     color: #77ffc0;
     /* border:1px solid red; */
+    border-radius: 10px;
     margin-top: 1em;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-top: 10px;
 }
 
-.title{
+.title {
     /* border: 1px solid red; */
     padding: 5px 12px;
 }
 
-.title::after{
+.title::after {
     content: "";
     display: block;
-    width: 100%;
-    border:2px solid #77ffc0;
+    width: 8em;
+    border: 2px solid #77ffc0;
     border-radius: 2px;
     margin-top: 2px;
 }
 
-.form-group{
+#criterios {
+    display: flex;
+    /* flex-direction: column; */
+    /* border: 1px solid red; */
+    padding: 11px 11px;
+}
+
+.form-group {
     /* border: 1px solid red; */
     display: flex;
     flex-direction: row;
@@ -94,7 +105,7 @@ main {
     margin: 0 auto;
 }
 
-.input{
+.input {
     display: flex;
     margin-bottom: .5em;
     padding: 10px;
@@ -104,7 +115,13 @@ main {
     width: 200px;
 }
 
-#btn{
+.size {
+    width: 15%;
+    /* margin-top: .2em; */
+    margin-right: 2em;
+}
+
+#btn {
     cursor: pointer;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -113,7 +130,7 @@ main {
     width: 20%;
     height: 40px;
     margin-top: 3px;
-    
+
 }
 
 #btn:hover {
@@ -124,7 +141,7 @@ main {
     font-weight: bold;
 }
 
-footer{
+footer {
     padding: 10px 10px;
     color: #77ffc0;
     text-align: center;
