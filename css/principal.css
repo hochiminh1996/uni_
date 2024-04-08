@@ -17,6 +17,7 @@
 
 body{
     background-color: var(--var_cor_fundo);
+    overflow-x: hidden;
 }
 
 header{
@@ -62,7 +63,6 @@ div#logo{
 main {
     height: 90vh;
     width: 100vw;
-    /* border:1px solid red; */
 }
 
 footer{
@@ -70,4 +70,5 @@ footer{
     color: #77ffc0;
     text-align: center;
     background-color: var(--var-font-header);
+    width: 100%;
 }
