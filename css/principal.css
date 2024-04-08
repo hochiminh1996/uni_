@@ -26,7 +26,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     color: #77ffc0;
-    padding: 10px 20px;
+    padding: 10px 15px;
     background-color: var(--var-font-header);
 }
 
