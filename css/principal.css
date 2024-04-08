@@ -91,16 +91,25 @@ main {
 }
 
 .title_h3{
-    padding: 10px 13px;
+    padding: 1px 13px;
 }
 
 #criterios {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     /* border: 1px solid red; */
     padding: 0px 11px;
     margin: .2em;
+    justify-content: space-between;
 }
+
+.criterios_grupo{
+    /* border:1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
 
 #type{
     /* border:1px solid red; */
@@ -126,9 +135,8 @@ main {
 }
 
 .size {
-    width: 15%;
-    /* margin-top: .2em; */
-    margin-right: 2em;
+    width:100%;
+    /* margin-right: 2em; */
 }
 
 #btn {

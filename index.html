@@ -24,7 +24,7 @@
 
     <main>
         <div id="search">
-            <form action="" method="post">
+            <form action="#" method="post">
                 <h1 class="title">Busque seu sonho</h1>
 
                 <div class="form-group">
@@ -42,13 +42,33 @@
                     <input type="submit" id="btn">
                 </div>
                 <h3 class="title_h3">Critérios</h3>
+
+
                 <div id="criterios">
-                    <label for="infra">Infraestrutura:</label><input type="range" min="1" max="10" step="1" id="infra"
-                        class="size">
-                    <label for="professores">Professores:</label><input type="range" min="1" max="10" step="1"
-                        id="professores" class="size">
-                    <label for="localizacao">Localização:</label><input type="range" min="1" max="10" step="1" 
-                        id="localizacao" class="size">
+                    <div class="criterios_grupo">
+                        <label for="infra">Infraestrutura:</label>
+                            
+                        <input type="range" min="1" max="5" step="1" id="infra" class="size" name="infra">
+                        <span id="infraValor"></span>
+                    </div>
+
+                    <div>
+                        <div class="criterios_grupo">
+                            <label for="professores">Professores:</label>
+                            &nbsp;
+                            <input type="range" min="1" max="5" step="1" id="professores" class="size" name="professores">
+                            <span id="professoresValor"></span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="criterios_grupo">
+                            <label for="localizacao">Localização:</label><input type="range" min="1"
+                                max="5" step="1" id="localizacao" class="size" name="localizacao">
+                            <span id="localizacaoValor"></span>
+                        </div>
+
+                    </div>
                 </div>
 
                 <div id="type">
@@ -63,6 +83,8 @@
     <footer>
         <span>Uniavalia &copy;</span>
     </footer>
+
+    <script src="js/range.js"></script>
 </body>
 
 </html>
